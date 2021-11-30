@@ -47,9 +47,6 @@ const Signup: React.FC = () => {
         password: confirmPassword,
         attributes: {
           email,
-          name,
-          phone_number: phone,
-          "custom:company": company,
         },
       });
       Toast("Success!!", "Signup was successful", "success");
@@ -74,10 +71,7 @@ const Signup: React.FC = () => {
         {" "}
         New Account Registration
       </h1>
-      <Field label="Name" {...bindName} />
       <Field label="Email" {...bindEmail} type="email" />
-      <Field label="Phone" {...bindPhone} type="tel" />
-      <Field label="Company" {...bindCompany} />
       <Field label="Password" type="password" {...bindPassword} />
       <Field
         label="Confirm Password"

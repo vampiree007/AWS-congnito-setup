@@ -12,7 +12,7 @@ const Dashboard: React.FC = () => {
   const goToLinkedIn = () => {
     const a = document.createElement("a");
     a.target = "_blank";
-    a.href = "https://www.linkedin.com/in/mubbashir10/";
+    a.href = "https://www.linkedin.com/in/coderVikrant/";
     a.click();
   };
 
